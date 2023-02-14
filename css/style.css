@@ -1,4 +1,15 @@
 /********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/* @font-face {
+    font-family: 'KorailRoundGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+} */
+* {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
 :root {
     --primary: #F3525A;
     --secondary: #F6F6F6;
@@ -38,7 +49,7 @@ h6,
 }
 
 .btn {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -90,7 +101,7 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
     padding: 35px 15px;
     font-size: 18px;
     text-transform: uppercase;
@@ -121,6 +132,19 @@ h6,
     bottom: 0;
     background: rgba(21, 36, 64, .7);
     z-index: 1;
+}
+
+.carousel-caption-nobg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position:absolute;
+    padding-top:1.25rem;
+    padding-bottom:1.25rem;
+    color:#fff;
+    text-align:center
 }
 
 @media (max-width: 576px) {
