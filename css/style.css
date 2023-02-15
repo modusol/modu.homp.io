@@ -157,6 +157,10 @@ h6,
         font-size: 30px;
         font-weight: 600 !important;
     }
+    .caption-text {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+    }
 }
 
 .carousel-control-prev,
