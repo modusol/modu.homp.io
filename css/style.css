@@ -147,24 +147,6 @@ h6,
     text-align:center
 }
 
-@media (max-width: 576px) {
-    html {
-        font-size : 10px;
-    }
-    .carousel-caption h5 {
-        font-size: 14px;
-        font-weight: 500 !important;
-    }
-
-    .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 600 !important;
-    }
-    .bi-arrow-up {
-        font-size : 20px;
-    }
-}
-
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
@@ -281,4 +263,22 @@ h6,
 
 .blog-item:hover img {
     transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size : 10px;
+    }
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+    .bi-arrow-up {
+        font-size : 20px;
+    }
 }
