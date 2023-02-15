@@ -148,6 +148,9 @@ h6,
 }
 
 @media (max-width: 576px) {
+    html {
+        font-size : 12px;
+    }
     .carousel-caption h5 {
         font-size: 14px;
         font-weight: 500 !important;
@@ -157,10 +160,10 @@ h6,
         font-size: 30px;
         font-weight: 600 !important;
     }
-    .caption-text {
+    /* .caption-text {
         font-size: 14px !important;
         font-weight: 300 !important;
-    }
+    } */
 }
 
 .carousel-control-prev,
