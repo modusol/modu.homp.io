@@ -281,4 +281,12 @@ h6,
     .bi-arrow-up {
         font-size : 20px;
     }
+    .carousel-caption-nobg {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(21, 36, 64, .7);
+        z-index: 1;
+    }
 }
