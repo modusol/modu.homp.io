@@ -149,7 +149,7 @@ h6,
 
 @media (max-width: 576px) {
     html {
-        font-size : 12px;
+        font-size : 10px;
     }
     .carousel-caption h5 {
         font-size: 14px;
