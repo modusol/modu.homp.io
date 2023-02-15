@@ -160,10 +160,9 @@ h6,
         font-size: 30px;
         font-weight: 600 !important;
     }
-    /* .caption-text {
-        font-size: 14px !important;
-        font-weight: 300 !important;
-    } */
+    .bi-arrow-up {
+        font-size : 20px;
+    }
 }
 
 .carousel-control-prev,
