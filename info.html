@@ -154,21 +154,21 @@
         </div>
     </div>
 
-    <div class="container-fluid py-4 px-5">   
+    <div class="container-fluid py-3 py-sm-5 ps-3 px-sm-5">   
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 mb-0">History</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>     
         <div class="row g-0">
-            <div class="col-lg-12 ps-5 mb-5" style="min-height: 600px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/history.jpg" style="object-fit: contain;">
+            <div class="col-lg-12 py-3 py-sm-4 ps-3 px-sm-5 d-flex flex-column">
+                <div class="col-10 align-self-center">
+                    <img class="img-fluid w-100" src="img/history.jpg" style="object-fit: contain;">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid py-4 px-5">   
+    <div class="container-fluid py-3 py-sm-5 ps-3 px-sm-5">   
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 mb-0">Contact</h1>
             <hr class="w-25 mx-auto bg-primary">
@@ -179,20 +179,20 @@
                     <iframe class="w-100 h-100"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.9041407199866!2d127.07678221513102!3d37.249981779858345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b44d90aafa6f7%3A0x9c54999360744159!2z6rK96riw64-EIOyImOybkOyLnCDsmIHthrXqtawg7LKt66qF66GcMjHrsojquLggMTkgNjAz7Zi4!5e0!3m2!1sko!2skr!4v1676014732104!5m2!1sko!2skr" style="border:0;" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-lg-6 align-items-center py-4 px-5">
+            <div class="col-lg-6 align-items-center py-3 px-3 py-sm-4 px-sm-5">
                 <h1 class="display-5 mb-4">문의하기</h1>
                 <p class="mb-4">문의할 내용을 남겨주시면 바로 준비하여 응답하도록 하겠습니다.</p>
                 <form class="gform" method="POST" 
-                    data-email="sichoi@modusol.co.kr" 
+                    data-email="jdpark@modusol.co.kr" 
                     action="https://script.google.com/macros/s/AKfycbwruDl1C25sBsJjJNyWNN1-tXsgFhiSlABjuHPrZfycIyWDK7zpfHqxcBl6Btq07Gn4dg/exec" 
-                    target="ifrm1" >
+                    target="ifrm1" id="form1">
                     <div class="row gx-3">
                         <div class="col-6">
                             <div class="form-floating">
                                 <select name="category" class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
-                                    <option selected>Business & Sales</option>
-                                    <option value="1">기술지원 (Support)</option>
-                                    <option value="2">제품 개발 (Product Development)</option>
+                                    <option data-mail="jdpark@modusol.co.kr" selected>Business & Sales</option>
+                                    <option data-mail="hdjung@modusol.co.kr">기술지원 (Support)</option>
+                                    <option data-mail="sichoi@modusol.co.kr">제품 개발 (Product Development)</option>
                                 </select>
                                 <label for="floatingSelect">문의할 Category를 선택해주세요</label>
                             </div>
@@ -207,26 +207,31 @@
                     <div class="row gx-3">
                         <div class="col-6 mt-3">
                             <div class="form-floating">
-                                <input type="text" name="전화번호" class="form-control" id="form-floating-1">
-                                <label for="form-floating-1">전화번호</label>
+                                <input type="text" name="전화번호" class="form-control" id="form-floating-2">
+                                <label for="form-floating-2">전화번호</label>
                             </div>
                         </div>
                         <div class="col-6 mt-3">
                             <div class="form-floating mb-3">
-                                <input type="email" name="Email" class="form-control" id="form-floating-2">
-                                <label for="form-floating-2">Email address</label>
+                                <input type="email" name="Email" class="form-control" id="form-floating-3" required>
+                                <label for="form-floating-3">Email address</label>
                             </div>
                         </div>
                     </div>
                     <div class="row gx-3">
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" name="내용" aria-label="With textarea" rows="3" style="min-height: 200px;"></textarea>
-                                <label for="form-floating-1">문의할 내용을 입력해 주세요</label>
+                                <textarea class="form-control" name="내용" id="form-floating-4" aria-label="With textarea" rows="3" style="min-height: 200px;"></textarea>
+                                <label for="form-floating-4">문의할 내용을 입력해 주세요</label>
                             </div>
                         </div>
-                        <div class="col-6 my-4">
+                        <div class="col-4 my-4">
                             <button class="btn btn-primary w-100 h-100" type="submit">문의하기</button>
+                        </div>
+                        <div class="col-8 my-4 thankyou-message" style="display:none">
+                            <!-- You can customize the thankyou message by editing the code below -->
+                            <h6>요청하신 내용이 전송 완료 되었습니다.
+                            </h6>
                         </div>
                     </div>
                 </form>
@@ -294,7 +299,7 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-    <!-- <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe> -->
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -302,11 +307,24 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
 </body>
+<script>
+    (function ($) {
+    "use strict";
 
+    $(document).ready(function () {
+        $("#floatingSelect").change(
+            function () {
+                console.log($("#floatingSelect option:selected").attr('data-mail'));
+                $('#form1').attr('data-email',$("#floatingSelect option:selected").attr('data-mail'));
+            }
+        )
+    });
+})(jQuery);
+</script>
+<iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
 </html>
