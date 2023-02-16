@@ -174,62 +174,54 @@
             <hr class="w-25 mx-auto bg-primary">
         </div>     
         <div class="row g-0 bg-secondary">
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <div class="position-relative h-100">
                     <iframe class="w-100 h-100"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.9041407199866!2d127.07678221513102!3d37.249981779858345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b44d90aafa6f7%3A0x9c54999360744159!2z6rK96riw64-EIOyImOybkOyLnCDsmIHthrXqtawg7LKt66qF66GcMjHrsojquLggMTkgNjAz7Zi4!5e0!3m2!1sko!2skr!4v1676014732104!5m2!1sko!2skr" style="border:0;" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-lg-6 align-items-center py-4 px-5">
-                <h1 class="display-5 mb-4">문의하기</h1>
-                <p class="mb-4">문의할 내용을 남겨주시면 바로 준비하여 응답하도록 하겠습니다.</p>
-                <form class="gform" method="POST" 
-                    data-email="sichoi@modusol.co.kr" 
-                    action="https://script.google.com/macros/s/AKfycbwruDl1C25sBsJjJNyWNN1-tXsgFhiSlABjuHPrZfycIyWDK7zpfHqxcBl6Btq07Gn4dg/exec" 
-                    target="ifrm1" >
-                    <div class="row gx-3">
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <select name="category" class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
-                                    <option selected>Business & Sales</option>
-                                    <option value="1">기술지원 (Support)</option>
-                                    <option value="2">제품 개발 (Product Development)</option>
-                                </select>
-                                <label for="floatingSelect">문의할 Category를 선택해주세요</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" name="name" class="form-control" id="form-floating-1">
-                                <label for="form-floating-1">이름</label>
-                            </div>
-                        </div>
+            <div class="col-lg-5 p-5">
+                <div class="pb-5">
+                    <div>
+                        <h4 class="text-primary">Business & Sales</h4>
                     </div>
-                    <div class="row gx-3">
-                        <div class="col-6 mt-3">
-                            <div class="form-floating">
-                                <input type="text" name="phonenum" class="form-control" id="form-floating-1">
-                                <label for="form-floating-1">전화번호</label>
-                            </div>
-                        </div>
-                        <div class="col-6 mt-3">
-                            <div class="form-floating mb-3">
-                                <input type="email" name="email" class="form-control" id="form-floating-2">
-                                <label for="form-floating-2">Email address</label>
-                            </div>
-                        </div>
+                    <div class="ms-1">
+                        <h5>박재덕</h5>
                     </div>
-                    <div class="row gx-3">
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" name="content" aria-label="With textarea" rows="3" style="min-height: 200px;"></textarea>
-                                <label for="form-floating-1">문의할 내용을 입력해 주세요</label>
-                            </div>
-                        </div>
-                        <div class="col-6 my-4">
-                            <button class="btn btn-primary w-100 h-100" type="submit">문의하기</button>
-                        </div>
+                    <div class="ms-3">
+                        jdpark@modusol.co.kr
                     </div>
-                </form>
+                    <div class="ms-3">
+                        010-5484-3415
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div>
+                        <h4 class="text-primary">기술지원 (Support)</h4>
+                    </div>
+                    <div class="ms-1">
+                        <h5>정호동</h5>
+                    </div>
+                    <div class="ms-3">
+                        hdjung@modusol.co.kr
+                    </div>
+                    <div class="ms-3">
+                        010-2469-1793
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div>
+                        <h4 class="text-primary">제품 개발 (Product Development)</h4>
+                    </div>
+                    <div class="ms-1">
+                        <h5>최승일</h5>
+                    </div>
+                    <div class="ms-3">
+                        sichoi@modusol.co.kr
+                    </div>
+                    <div class="ms-3">
+                        010-9456-8277
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row g-0 bg-secondary">            
@@ -294,7 +286,7 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-    <!-- <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe> -->
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -305,8 +297,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="form-submission-handler.js"></script>
 </body>
 
 </html>
