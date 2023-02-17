@@ -57,6 +57,10 @@
     });
 
     $('.owl-carousel').owlCarousel({
+        autoplay:true,
+        autoplayTimeout:2100,
+        autoplayHoverPause:true,
+        smartSpeed: 1000,
         loop:true,
         margin:10,
         nav:true,
