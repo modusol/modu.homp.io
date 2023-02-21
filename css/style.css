@@ -265,6 +265,14 @@ h6,
     transform: scale(1.1);
 }
 
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
+.owl-carousel .owl-item {
+    width: auto;
+    height: 100%;
+}
 .owl-carousel .owl-nav{
     overflow: hidden;
     height: 0px;
@@ -302,6 +310,14 @@ opacity: 0.2;
 .owl-carousel .next-slide:hover{
     background-position: -24px -53px;
 }
+.info-img{
+    min-height: 500px;
+}
+@media (min-width: 992px){
+    .text-lg-left {
+        text-align: left !important;
+    }
+}
 
 @media (max-width: 576px) {
     html {
@@ -329,5 +345,8 @@ opacity: 0.2;
     }
     .owl-carousel .nav-btn {
         top: 60px !important;
+    }
+    .info-img{
+        min-height: 320px;
     }
 }
