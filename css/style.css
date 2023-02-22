@@ -313,6 +313,10 @@ opacity: 0.2;
 .info-img{
     min-height: 500px;
 }
+.bg-grey-50{
+    --bs-bg-opacity: 1;
+    background-color: rgba(248, 249, 250, var(--bs-bg-opacity)) !important;
+}
 @media (min-width: 992px){
     .text-lg-left {
         text-align: left !important;
