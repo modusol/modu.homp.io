@@ -339,6 +339,16 @@ opacity: 0.2;
     .bi-arrow-up {
         font-size : 20px;
     }
+    
+    .owl-carousel .nav-btn {
+        top: 60px !important;
+    }
+    .info-img{
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 1500px) {
     .carousel-caption-nobg {
         top: 0;
         left: 0;
@@ -346,11 +356,5 @@ opacity: 0.2;
         bottom: 0;
         background: rgba(21, 36, 64, .7);
         z-index: 1;
-    }
-    .owl-carousel .nav-btn {
-        top: 60px !important;
-    }
-    .info-img{
-        min-height: 320px;
     }
 }
