@@ -451,8 +451,8 @@ button {
 	  }
 	
 	  .img_wrap {
-	    width: 500px;
-	    height: 800px;
+	    width: 400px;
+	    height: 600px;
 	    display:flex;
 	    justify-content:center;
 	    align-items:center;
