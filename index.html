@@ -29,15 +29,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHYFDS3NP9"></script>
+    <link href="css/style.css" rel="stylesheet">    
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHYFDS3NP9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'G-HHYFDS3NP9');
-    </script>
+    </script> -->
 </head>
 
 <div>
@@ -429,7 +429,19 @@
 </p>
     </div>
     <!-- Footer End -->
-
+	<div class="main_popup">
+	  <div class="layer_cont">
+	    <div class="img_wrap">
+	       <img class="img-fluid" src="img/notice1.jpeg" alt="Image" style="min-height:200px;object-fit:cover">
+	    </div>
+	    <div class="btn_wrap">
+	      <!-- 오늘 하루 보지 않기 --->
+	      <button class="btn_today_close"><span>오늘 하루 보지 않기</span></button>
+	      <!-- 그냥 닫기 --->
+	      <button class="btn_close">close</button>
+	    </div>
+	  </div>
+	</div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -444,6 +456,54 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+    var toggleMainPopup = function() {
+    	  
+    	  /* 쿠키 제어 함수 정의 */
+    	  var handleCookie = {
+    	    // 쿠키 쓰기
+    	    // 이름, 값, 만료일
+    	    setCookie: function (name, val, exp) {
+    	      var date = new Date();
+    	      
+    	      // 만료 시간 구하기(exp를 ms단위로 변경)
+    	      date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+    	      console.log(name + "=" + val + ";expires=" + date.toUTCString() + ";path=/");
+    	      
+    	      // 실제로 쿠키 작성하기
+    	      document.cookie = name + "=" + val + ";expires=" + date.toUTCString() + ";";
+    	    },
+    	    // 쿠키 읽어오기(정규식 이용해서 가져오기)
+    	    getCookie: function (name) {
+    	      var value = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+    	      return value ? value[2] : null;
+    	    }
+    	  };
+    	  console.log(handleCookie.getCookie("today"));
+    	  
+    	  // 쿠키 읽고 화면 보이게
+    	  if (handleCookie.getCookie("today") == "y") {
+    	    $(".main_popup").removeClass("on");
+    	  } else {
+    	    $(".main_popup").addClass("on");
+    	  }
+
+    	  // 오늘하루 보지 않기 버튼
+    	  $(".main_popup").on("click", ".btn_today_close", function () {
+    	    handleCookie.setCookie("today", "y", 1);
+    	    $(this).parents(".main_popup.on").removeClass("on");
+    	  });
+
+    	  // 일반 버튼
+    	  $(".main_popup").on("click", ".btn_close", function () {
+    	    $(this).parents(".main_popup.on").removeClass("on");
+    	  });
+    	}
+
+    	$(function() {
+    	  toggleMainPopup();
+    	});
+    </script>
 </body>
 
 </html>
