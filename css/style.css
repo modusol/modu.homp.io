@@ -442,7 +442,7 @@ button {
 	    width: 100%;
 	    left: 0px;
 	    margin-left: 0; /* half of width */
-	    top: 0px;
+	    top: 45px;
 	    overflow: auto;
 	    display: none;
 	  &.on {
