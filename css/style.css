@@ -376,6 +376,7 @@ button {
     margin-left: -20%; /* half of width */
     top: 70px;
     overflow: auto;
+    display: none;
   &.on {
     display: block;
     background-color: #fff;
